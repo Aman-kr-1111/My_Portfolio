@@ -496,6 +496,13 @@ footer a i {
     grid-template-columns: 1fr;
   }
 
+  .change-text {
+    font-size: 1.2rem;
+  }
+  .word::after {
+    content: "";
+    height: 30px;
+  }
   .skill-main {
     grid-template-columns: 1fr;
   }

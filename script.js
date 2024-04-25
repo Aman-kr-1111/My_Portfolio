@@ -77,23 +77,29 @@ const filterButtons = document.querySelectorAll(".filter-btn");
 
 const videos = {
   all: [
-    "assets/js.mp4",
-    "assets/js.mp4",
-    "assets/css.mp4",
-    "assets/css.mp4",
-    "assets/react.mp4",
-    "assets/react.mp4",
+    "assets/Css_Projects/Modern_Buttons.mp4",
+    "assets/Css_Projects/Linear_Progress_Bar.mp4",
+    "assets/Js_Projects/Auto_Typing.mp4",
+    "assets/Js_Projects/Color_Generator.mp4",
+    "assets/React_Projects/Bg_Changer.mp4",
+    "assets/React_Projects/Top_Courses.mp4",
   ],
-  css: ["assets/css.mp4", "assets/css.mp4", "assets/css.mp4"],
+  css: [
+    "assets/Css_Projects/Frontend_Roadmap.mp4",
+    "assets/Css_Projects/Linear_Progress_Bar.mp4",
+    "assets/Css_Projects/Modern_Buttons.mp4",
+  ],
   js: [
-    "assets/js.mp4",
-    "assets/js.mp4",
-    "assets/js.mp4",
-    "assets/js.mp4",
+    "assets/Js_Projects/Auto_Typing.mp4",
+    "assets/Js_Projects/Color_Generator.mp4",
+    "assets/Js_Projects/Counter_App.mp4",
+    "assets/Js_Projects/Dark_Mode.mp4",
+    "assets/Js_Projects/Dice_Roll.mp4",
   ],
   react: [
-    "assets/react.mp4",
-    "assets/react.mp4",
+    "assets/React_Projects/Bg_Changer.mp4",
+    "assets/React_Projects/Password_Generator.mp4",
+    "assets/React_Projects/Top_Courses.mp4",
   ],
 };
 

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <!--  link boxicons with HTML -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Css link with HTML -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!--------------- Header Section ------------------>
+    <header>
+      <div class="logo"><span>A</span>man</div>
+      <ul class="navlist">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div id="menu-icon" class="bx bx-menu"></div>
+    </header>
+
+    <!--------------- Home Section ------------------>
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Hi! I'm Aman Kumar</h1>
+        <div class="change-text">
+          <h3 class="word-container">and I'm a</h3>
+          <h3><span class="word"></span></h3>
+        </div>
+
+        <p class="home-text">
+          Here is my portfolio website and you'll learn <br />about my journey
+          as a software developer.
+        </p>
+
+        <div class="social-media">
+          <a href="https://github.com/Aman-kr-1111" target="_blank" class="btn"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/raees_ke_damad/"
+            target="_blank"
+            class="btn"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a
+            class="btn"
+            href="https://www.linkedin.com/in/aman-kumar-64b22b270/"
+            target="_blank"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a class="btn" href="https://twitter.com/Aman_kr_1111" target="_blank"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!--------------- About Section ------------------>
+    <section class="about" id="about">
+      <div class="about-content">
+        <h2>About me</h2>
+        <p>
+          Hello! My name is Aman Kumar, and I'm a BCA student in my final year.
+          I have a keen interest in web development and have been exploring this
+          field throughout my journey. I've worked with languages like HTML,
+          CSS, JavaScript, Java, and various other technologies to broaden my
+          skill set. Continual practice has been my mantra for skill
+          enhancement, and I've also showcased my proficiency by completing
+          several projects. Some of the projects I've worked on include
+          counters, tic-tac-toe, password generators, and perfect guess games..
+          While my current focus is on my academic pursuits, I remain committed
+          to staying updated and refining my skills. My goal is to become a
+          successful and skilled software engineer, and I'm dedicated to working
+          diligently towards that direction.
+        </p>
+
+        <h2 class="thnx_viewer">
+          Thank you for taking the time to view my portfolio.
+        </h2>
+        <button class="btn" id="resume" onclick="resume()">Resume</button>
+      </div>
+    </section>
+
+    <!--------------- Skills Section ------------------>
+    <section class="skills" id="skills">
+      <h2>My Skills</h2>
+
+      <div class="skill-main">
+        <!-- html bar -->
+        <div class="skill-bar">
+          <div class="info">
+            <p>HTML</p>
+            <p>80%</p>
+          </div>
+          <div class="bar">
+            <span class="html"></span>
+          </div>
+        </div>
+
+        <!-- Css bar -->
+        <div class="skill-bar">
+          <div class="info">
+            <p>CSS</p>
+            <p>70%</p>
+          </div>
+          <div class="bar">
+            <span class="css"></span>
+          </div>
+        </div>
+
+        <!-- js bar -->
+        <div class="skill-bar">
+          <div class="info">
+            <p>JavaScript</p>
+            <p>65%</p>
+          </div>
+          <div class="bar">
+            <span class="js"></span>
+          </div>
+        </div>
+
+        <!-- tailwind bar -->
+        <div class="skill-bar">
+          <div class="info">
+            <p>Tailwind</p>
+            <p>75%</p>
+          </div>
+          <div class="bar">
+            <span class="tailwind"></span>
+          </div>
+        </div>
+
+        <!-- React bar -->
+        <div class="skill-bar">
+          <div class="info">
+            <p>React Js</p>
+            <p>70%</p>
+          </div>
+          <div class="bar">
+            <span class="react"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------------- Projects Section ------------------>
+    <section class="projects" id="projects">
+      <h2>My Projects</h2>
+
+      <div class="video-section">
+        <a href="#" class="filter-btn" data-filter="all">All</a>
+        <a href="#" class="filter-btn" data-filter="css">CSS</a>
+        <a href="#" class="filter-btn" data-filter="js">JS</a>
+        <a href="#" class="filter-btn" data-filter="react">React</a>
+      </div>
+
+      <div id="video-container">
+        <!-- Videos will be dynamically added here -->
+      </div>
+    </section>
+
+    <!--------------- Contact Section ------------------>
+    <section class="contact" id="contact">
+      <h2>Contact Me</h2>
+      <form action="#">
+        <input id="username" type="text" placeholder="Your name" required />
+        <input id="useremail" type="email" placeholder="Your Email" required />
+        <input
+          id="useraddress"
+          type="text"
+          placeholder="Your Address"
+          required
+        />
+        <input
+          id="usernumber"
+          type="number"
+          placeholder="Phone Number"
+          required
+        />
+
+        <textarea
+          id="usermessage"
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <button class="btn" onclick="{addContact}">Send Message</button>
+      </form>
+    </section>
+
+    <!--------------- Footer Section ------------------>
+    <footer>
+      <p>Copyright &copy; 2024 by Aman || All Right Reserved.</p>
+      <a href="#home" class="btn">
+        <i class="bx bx-up-arrow-alt"></i>
+      </a>
+    </footer>
+
+    <!-- Css link with HTML -->
+    <script src="script.js"></script>
+  </body>
+</html>

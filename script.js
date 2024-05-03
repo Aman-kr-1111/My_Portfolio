@@ -110,6 +110,7 @@ function showVideos(category) {
   for (let i = 0; i < maxVideos; i++) {
     const video = document.createElement("video");
     video.setAttribute("controls", true);
+    video.setAttribute("loading", "lazy");
     const source = document.createElement("source");
     source.setAttribute("src", filteredVideos[i]);
     video.appendChild(source);

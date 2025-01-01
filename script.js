@@ -20,7 +20,7 @@ window.onscroll = () => {
 
 // <!----------- Auto Typing Section (Home-Section)------------>
 
-const wordList = ["Frontend_Developer", "Web_Developer"];
+const wordList = ["Frontend_Developer", "Web_Developer","Java_Developer"];
 const span = document.querySelector(".word");
 autoTyping(span, wordList);
 

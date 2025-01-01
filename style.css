@@ -328,6 +328,22 @@ section {
   }
 }
 
+
+/* Skills Section (java-bar) Css */
+.bar .java {
+  width: 70%;
+  animation: java 5s infinite;
+}
+
+@keyframes java {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
 /* Projects section css */
 .projects {
   padding: 40px 10%;
